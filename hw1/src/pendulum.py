@@ -8,7 +8,7 @@ The equation we want to solve:
 """
 
 # constant
-g = 9.8 
+g = 9.8
 L = 0.1
 h = 0.01
 m = 1
@@ -43,7 +43,7 @@ velocity_half = [L * (theta[i + 1] - theta[i]) / (2 * h) for i in range(len(thet
 T_half = [1 / 2 * m * v**2 for v in velocity_half]
 V_half = [m * g * L * (1 - math.cos(theta)) for theta in theta_half]
 E_half = np.array(T_half) + np.array(V_half)
-assert len(T_half)==len(V_half), "Error"
+assert len(T_half) == len(V_half), "Error"
 
 print(len(theta))
 print(len(time))

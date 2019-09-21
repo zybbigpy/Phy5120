@@ -4,7 +4,7 @@
 
 ## 1. The Linear and nonlinear pendulums
 
-## 1.1 
+### 1.1 
 
 The equation of motion is in the format of:
 
@@ -20,12 +20,7 @@ The swing period is:
 
 $$T = 2\pi \sqrt\frac{\ell}{g}$$.
 
-## 1.2
-
-dsf1
-
-
-
+### 1.2
 
 
 
