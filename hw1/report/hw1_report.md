@@ -2,36 +2,9 @@
 
 Author: MIAO Wangqian, Student ID: 20617902
 
-## 1. How to build my code
+## 1. The Linear and nonlinear pendulums
 
-First of all, clone my code from Github.
-
-```bash
-git clone git@github.com:zybbigpy/Phy5120.git
-```
-
-Then, use `git pull` to get the latest code and report.
-
-```bash
-git pull origin master
-```
-
-If your system support `Make`, just use the command below. if you have `pandoc` and LaTeX in your system, you can build the pdf file. Otherwise you just enter the report directory to get the pdf file.
-
-```bash
-# go to hw1
-cd hw1
-# run code
-make run
-# make pdf file
-make doc
-# clean data
-make clean
-```
-
-## 2. The Linear and nonlinear pendulums
-
-### 2.1 Solution
+### 1.1 Solution
 
 The equation of motion is in the format of:
 
@@ -47,8 +20,24 @@ The swing period is:
 
 $$T = 2\pi \sqrt\frac{\ell}{g}$$
 
-### 2.2 Solution
+### 1.2 Solution
 
+```bash
+# use the following command to find help message
+python pendulum.py -h
+# the python command to run
+python -O pendulum.py -s 0.01 -t 300 -a 6
+```
 
+The numerical solution is that: Figure1
 
+![theta time relationship](../figs/theta_time_0.01_6.png)
 
+### 1.3 Solutiom
+
+After I solve the energy time relationship, I find that the energy is oscillating and it does not obey the energy conservation law. When I increase the timestep, the oscilation becomes more rapid. The exact energy is
+shown in the plot.
+
+![energy time relationship](../figs/energy_time_0.01_160.png)
+
+![energy time relationship](../figs/energy_time_0.1_160.png)
