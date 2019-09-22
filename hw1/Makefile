@@ -1,8 +1,11 @@
 # no assert
-PYFLAG=#-O
+PYFLAG=-O
 PY_MAIN=pendulum.py
+STEP=0.01
+TIME=300
+ANGLE=6
 
-.PHONY: clean run doc
+.PHONY: run doc clean
 
 clean-pyc:
 	@find . -name '*.pyc' -delete
@@ -14,11 +17,11 @@ clean-figs:
 format:
 	@yapf -i -r . --style ../yapf_style.cfg
 
-run: format clean-figs
-	python $(PYFLAG) src/$(PY_MAIN)
+run: format
+	python $(PYFLAG) src/$(PY_MAIN) -s $(STEP) -t $(TIME) -a $(ANGLE)
 
 clean: clean-pyc clean-figs
 	@echo "Clean all data."
 
 doc: report/hw1_report.md
-	cd report && make mkpdf
+	@cd report && make mkpdf
