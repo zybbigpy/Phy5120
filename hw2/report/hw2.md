@@ -38,16 +38,4 @@ The radial distribution function is shown:
 
 ## 5
 
-It should be the same when we use the two different methods. But my numerical results show that it has some difference. When computing MSDs, we should use unfolded coordinates because we want to get the true displacement of the atoms.
-
-There may be something wrong in my code ?
-
-```python
-# in every production step,
-# I use the following code to record msd
-msd = np.sum((pos - pos_0)**2) / N
-msd_list.append(msd)
-# calculate the gradient of msd_list
-D1 = np.average(np.gradient(np.array(msd_list))/ (0.004*6)
-```
-
+problem solved. remember the copy feature of python.

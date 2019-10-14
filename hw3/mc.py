@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 rho = float(1458 / 1680)  # density of Argon in reduced units
 T_0 = float(203 / 119.8)  # temprature
-N_cell = 3  # number of fcc unitcells in one direction
+N_cell = 6  # number of fcc unitcells in one direction
 N = 4 * N_cell**3  # the total number of particles in the system
 L_box = (N / rho)**(1 / 3.0)  # length of the whole simulation box
 L_cell = L_box / N_cell  # length of a unitcell
@@ -103,13 +103,13 @@ def radial_distribution(r_final):
     '''
 
     r_distribution = (r_final + np.transpose(r_final)).reshape(-1)
-    r_ = np.linspace(np.min(r_distribution), np.max(r_distribution), 20)
-    dr = (np.max(r_distribution) - np.min(r_distribution)) / 20
+    r_ = np.linspace(np.min(r_distribution), np.max(r_distribution), 100)
+    dr = (np.max(r_distribution) - np.min(r_distribution)) / 100
     v = (r_**2 * (4 * math.pi * dr))[1:]
-    cout = np.zeros(19)
+    cout = np.zeros(99)
 
     for r in r_distribution:
-        for i in range(18):
+        for i in range(98):
             if (r_[i] < r < r_[i + 1]):
                 cout[i] += 1
 
@@ -118,7 +118,7 @@ def radial_distribution(r_final):
 
 if __name__ == "__main__":
 
-    steps = 2000
+    steps = 4000
     r_final = simulate(steps)
 
     couts, r_dis = radial_distribution(r_final)
@@ -127,7 +127,7 @@ if __name__ == "__main__":
     print(couts.shape[0], r_dis.shape[0])
     if (couts.shape[0] == r_dis.shape[0]):
         print("i am here")
-        plt.plot(r_dis, couts)
+        plt.plot(r_dis[:65], couts[:65])
         plt.xlabel("$\\rho(\sigma)$")
         plt.ylabel("$g(r)$")
         plt.savefig("./figs/raditial_func.png", dpi=400)
