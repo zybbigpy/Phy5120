@@ -103,17 +103,17 @@ def radial_distribution(r_final):
     '''
 
     r_distribution = (r_final + np.transpose(r_final)).reshape(-1)
-    r_ = np.linspace(np.min(r_distribution), np.max(r_distribution), 100)
-    dr = (np.max(r_distribution) - np.min(r_distribution)) / 100
-    v = (r_**2 * (4 * math.pi * dr))[1:100]
-    cout = np.zeros(99)
+    r_ = np.linspace(np.min(r_distribution), np.max(r_distribution), 20)
+    dr = (np.max(r_distribution) - np.min(r_distribution)) / 20
+    v = (r_**2 * (4 * math.pi * dr))[1:]
+    cout = np.zeros(19)
 
     for r in r_distribution:
-        for i in range(98):
+        for i in range(18):
             if (r_[i] < r < r_[i + 1]):
                 cout[i] += 1
 
-    return np.array(cout) / (N * np.array(v)), r_
+    return np.array(cout) / (N * np.array(v)), r_[1:]
 
 
 if __name__ == "__main__":
@@ -124,7 +124,9 @@ if __name__ == "__main__":
     couts, r_dis = radial_distribution(r_final)
 
     # print("L_cell[%.3f], L_box[%.3f]"%(L_cell, L_box))
+    print(couts.shape[0], r_dis.shape[0])
     if (couts.shape[0] == r_dis.shape[0]):
+        print("i am here")
         plt.plot(r_dis, couts)
         plt.xlabel("$\\rho(\sigma)$")
         plt.ylabel("$g(r)$")

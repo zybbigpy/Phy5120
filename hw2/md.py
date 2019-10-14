@@ -6,9 +6,10 @@ The original code is wrong. If you simply copy it, you will get ZERO mark!
 Reduced unit: \sigma=\epsilon=mass=k_B=1
 '''
 
+import math
+import copy
 import numpy as np
 from itertools import product
-import math
 import matplotlib.pyplot as plt
 
 rho = float(1458 / 1680)  # density of Argon in reduced units
@@ -85,18 +86,14 @@ def simulate(file):
     kins, pots, Ps, msd_list = [], [], [], []
     vac = 0
     pos = IC_pos(N_cell, L_cell)
-    pos_0 = pos
     vel = IC_vel(N)
-    vel_0 = vel
+    pos_0 = copy.deepcopy(pos)
+    vel_0 = copy.deepcopy(vel)
     F = find_force(pos)[0]
     for t in range(2000):
         pos, vel, F, pot, kin, P, pos_folded = time_step(pos, vel, F)
-        #print(type(vel_0), vel_0.shape)
-        #print(type(vel), vel.shape)
         vac += np.sum(vel_0 * vel) * dt
         if t > 1000:  # production run
-            #print("positon shape", pos.shape)
-            #print("vel shape", vel.shape)
             file.write("ARGON MD, t=   %.5f\n" % (t * dt))
             file.write("  108\n")
             for i in range(N):
@@ -163,11 +160,3 @@ if __name__ == "__main__":
     D1 = np.average(np.gradient(msds)/6)/0.004
     D2 = vacs / (3 * N)
     print(D1, D2)
-
-    T = np.mean(kins * 2 / (3 * N))  # temperature
-    P = 1 - np.mean(Ps) / (3 * N * T) - 16 * np.pi * rho / (3 * T * L_box**3
-                                                            )  # compressibility factor
-    P = P * T * rho  # pressure here
-
-    #print(T, P)  # how about thermal fluctuation?
-    #print(pots)
