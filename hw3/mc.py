@@ -51,7 +51,7 @@ def time_step(pos):
     pos_folded = np.mod(pos, L_box)
     E_o = find_potential(pos_folded)
 
-    pos_change = (np.random.rand(pos.shape[0], pos.shape[1]) - 0.5) * 0.01
+    pos_change = (np.random.rand(pos.shape[0], pos.shape[1]) - 0.5) * 0.001
     pos_n = pos + pos_change
 
     posn_folded = np.mod(pos_n, L_box)
@@ -92,6 +92,7 @@ def simulate(steps):
     '''
     pos = IC_pos(N_cell, L_cell)
     for t in range(steps):
+        print(t)
         pos = time_step(pos)
 
     return get_rfinal(pos)
@@ -118,7 +119,7 @@ def radial_distribution(r_final):
 
 if __name__ == "__main__":
 
-    steps = 4000
+    steps = 2000
     r_final = simulate(steps)
 
     couts, r_dis = radial_distribution(r_final)
