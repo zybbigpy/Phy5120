@@ -1,0 +1,6 @@
+load restart.xml
+set nempty 1 
+set wf_dyn JD
+run 0 100 
+plot -wf 4 HOMO.cube
+plot -wf 5 LUMO.cube

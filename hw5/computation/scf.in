@@ -1,0 +1,15 @@
+species oxygen O_HSCV_LDA-1.0.xml
+species hydrogen H_HSCV_LDA-1.0.xml
+set cell 16.0 0 0  0 16.0 0  0 0 16.0
+atom O oxygen  0.00000068 0.00004595 -0.00978420 
+atom H1 hydrogen  0.00000013 1.45749658 1.11402678
+atom H2 hydrogen   0.00000014 -1.45743901 1.11398224
+set xc LDA
+set ecut 85
+set ecutprec 5
+set wf_dyn PSDA
+set scf_tol 0.000000001
+randomize_wf
+run 0 400
+save restart.xml
+

@@ -1,0 +1,23 @@
+species oxygen O_HSCV_LDA-1.0.xml
+species hydrogen H_HSCV_LDA-1.0.xml
+set cell 16.0 0 0  0 16.0 0  0 0 16.0
+atom O oxygen  0.00000000 0.00000000 0.00000000 
+atom H1 hydrogen  0.00000000 1.43153712 1.10941390
+atom H2 hydrogen   0.00000000 -1.43153712 1.10941390
+set xc LDA
+set ecut 85
+set ecutprec 5
+set wf_dyn PSDA
+set scf_tol 0.000000001
+randomize_wf
+run 0 400
+distance O H1
+distance O H2
+angle H1 O H2
+# CG
+set atoms_dyn CG
+set dt 100
+run 100 50
+distance O H1
+distance O H2
+angle H1 O H2
