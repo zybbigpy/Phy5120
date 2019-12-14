@@ -34,7 +34,7 @@ LDA means local density approximation. It is one of the method to describe the e
 
 The total energy decreases when we increase `ecut`. That is true when we choose more plane wave functions as the basis of the many body system and it will be closer to the ground state energy.
 
-![](./pic/1-b.png)
+![1-b](./pic/1-b.png)
 
 ## 2
 
@@ -89,18 +89,14 @@ The three largest vibration frequencies are:
 | Experiment Result [1]        | 3490 cm-1          | 3277 cm-1         | 1654 cm-1 |
 | Category                     | asymmetric stretch | symmetric stretch | bend      |
 
- 
 ## 4
 
 The first picture shows that HOMO is lack of symmetry and the second picture shows that
 
 LUMO has mirror symmetry. They are consistent with the reference [2].
 
-<img src="C:\Users\Wangqian Miao\Desktop\hw5\pic\homo.jpg" alt="homo" style="zoom:38%;" />
-
-
-
-<img src="C:\Users\Wangqian Miao\Desktop\hw5\pic\lumo.jpg" alt="lumo" style="zoom:38%;" />
+![homo](./pic/homo.jpg)
+![lumo](./pic/lumo.jpg)
 
 ## Reference
 
