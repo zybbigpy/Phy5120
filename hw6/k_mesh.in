@@ -1,0 +1,23 @@
+species Sulfur S_ONCV_LDA-1.1.xml
+species Mo Mo_ONCV_LDA-1.0.xml
+
+#set cell 6.0337 0  0 -3.0169 5.2254  0  0 0 26.4236
+#atom Mo Mo 0 0 6.6059
+#atom S1 Sulfur -0.0000    3.4836    9.5656
+#atom S2 Sulfur -0.0000    3.4836    3.6462
+#
+set cell   5.2032493 -3.0040974  0.0000000 5.2032493  3.0040974  0.0000000 0.0000000  0.0000000 43.7178659
+atom M1 Mo 3.2302464  0.1283354 22.4715422
+atom S1 Sulfur 6.6990968  0.1283049 19.5142971
+atom S2 Sulfur 6.6990969  0.1283048 25.4292958
+#
+kp33.i
+set xc LDA
+set ecut 65
+set ecutprec 4
+set wf_dyn PSD
+set scf_tol 0.00000001
+randomize_wf
+run 0 200
+
+

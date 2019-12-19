@@ -1,0 +1,1475 @@
+--------------------------------------------------------------------------
+[[30201,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-19-165
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<fpmd:simulation xmlns:fpmd="http://www.quantum-simulation.org/ns/fpmd/fpmd-1.0">
+<uuid> fd08aa8a-2144-11ea-bc63-06b03d31dcd0 </uuid>
+
+                   ============================
+                   I qbox 1.63.8              I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I http://qboxcode.org      I
+                   ============================
+
+
+<release> 1.63.8  </release>
+<svn_version>  </svn_version>
+<user> ubuntu </user>
+<sysname> Linux </sysname>
+<nodename> ip-172-31-19-165 </nodename>
+<start_time> 2019-12-18T03:17:57Z </start_time>
+<mpi_processes count="1">
+<process id="0"> ip-172-31-19-165 </process>
+</mpi_processes>
+[qbox] <cmd>species Sulfur S_ONCV_LDA-1.1.xml</cmd>
+  SpeciesCmd: defining species Sulfur as S_ONCV_LDA-1.1.xml
+
+Warning at file , line 0, char 0
+  Message: unable to open primary document entity '/home/ubuntu/MoS2/species.xsd'
+
+ species Sulfur:
+<species name="Sulfur">
+ <description>
+
+
+ This pseudopotential file has been produced using the code
+ ONCVPSP  (Optimized Norm-Conservinng Vanderbilt PSeudopotential)
+ scalar-relativistic version 2.1.1, 03/26/2014 by D. R. Hamann
+ The code is available through a link at URL www.mat-simresearch.com.
+ Documentation with the package provides a full discription of the
+ input data below.
+
+
+ While it is not required under the terms of the GNU GPL, it is
+ suggested that you cite D. R. Hamann, Phys. Rev. B 88, 085117 (2013)
+ in any publication using these pseudopotentials.
+
+
+ Copyright 2015 The Regents of the University of California
+ 
+ This work is licensed under the Creative Commons Attribution-ShareAlike 
+ 4.0 International License. To view a copy of this license, visit 
+ http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to 
+ Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+ 
+ This pseudopotential is part of the Schlipf-Gygi norm-conserving 
+ pseudopotential library. Its construction parameters were tuned to 
+ reproduce materials of a training set with very high accuracy and 
+ should be suitable as a general purpose pseudopotential to treat a 
+ variety of different compounds. For details of the construction and 
+ testing of the pseudopotential please refer to:
+ 
+ [insert reference to paper here]
+ 
+ We kindly ask that you include this reference in all publications 
+ associated to this pseudopotential.
+
+
+Input file for PP generation:
+
+# ATOM AND REFERENCE CONFIGURATION
+# atsym  z    nc    nv    iexc   psfile
+  S 16.00     3     2     3      fpmd
+#
+#   n    l    f        energy (Ha)
+    1    0    2.00
+    2    0    2.00
+    2    1    6.00
+    3    0    2.00
+    3    1    4.00
+#
+# PSEUDOPOTENTIAL AND OPTIMIZATION
+# lmax
+    1
+#
+#   l,   rc,     ep,   ncon, nbas, qcut
+    0   2.12945  -0.63520    5    8   6.75573
+    1   1.52480  -0.26138    5    8   8.63513
+#
+# LOCAL POTENTIAL
+# lloc, lpopt,  rc(5),   dvloc0
+    4    5   0.95758      0.00000
+#
+# VANDERBILT-KLEINMAN-BYLANDER PROJECTORs
+# l, nproj, debl
+    0    2   1.22534
+    1    2   1.65602
+#
+# MODEL CORE CHARGE
+# icmod, fcfact
+    0   0.00000
+#
+# LOG DERIVATIVE ANALYSIS
+# epsh1, epsh2, depsh
+   -5.00    3.00    0.02
+#
+# OUTPUT GRID
+# rlmax, drl
+    6.00    0.01
+#
+# TEST CONFIGURATIONS
+# ncnf
+    0
+# nvcnf
+#   n    l    f
+ </description>
+ <symbol>S</symbol>
+ <atomic_number>16</atomic_number>
+ <mass>32.06</mass>
+ <norm_conserving_semilocal_pseudopotential>
+ <valence_charge>6</valence_charge>
+ <mesh_spacing>0.01</mesh_spacing>
+ </norm_conserving_semilocal_pseudopotential>
+</species>
+ SLPP semilocal potential
+ rcps_ =   1.5
+[qbox] <cmd>species Mo Mo_ONCV_LDA-1.0.xml</cmd>
+  SpeciesCmd: defining species Mo as Mo_ONCV_LDA-1.0.xml
+
+Warning at file , line 0, char 0
+  Message: unable to open primary document entity '/home/ubuntu/MoS2/species.xsd'
+
+ species Mo:
+<species name="Mo">
+ <description>
+
+
+ This pseudopotential file has been produced using the code
+ ONCVPSP  (Optimized Norm-Conservinng Vanderbilt PSeudopotential)
+ scalar-relativistic version 2.1.1, 03/26/2014 by D. R. Hamann
+ The code is available through a link at URL www.mat-simresearch.com.
+ Documentation with the package provides a full discription of the
+ input data below.
+
+
+ While it is not required under the terms of the GNU GPL, it is
+ suggested that you cite D. R. Hamann, Phys. Rev. B 88, 085117 (2013)
+ in any publication using these pseudopotentials.
+
+
+ Copyright 2015 The Regents of the University of California
+ 
+ This work is licensed under the Creative Commons Attribution-ShareAlike 
+ 4.0 International License. To view a copy of this license, visit 
+ http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to 
+ Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+ 
+ This pseudopotential is part of the Schlipf-Gygi norm-conserving 
+ pseudopotential library. Its construction parameters were tuned to 
+ reproduce materials of a training set with very high accuracy and 
+ should be suitable as a general purpose pseudopotential to treat a 
+ variety of different compounds. For details of the construction and 
+ testing of the pseudopotential please refer to:
+ 
+ [insert reference to paper here]
+ 
+ We kindly ask that you include this reference in all publications 
+ associated to this pseudopotential.
+
+
+Input file for PP generation:
+
+# ATOM AND REFERENCE CONFIGURATION
+# atsym  z    nc    nv    iexc   psfile
+  Mo 42.00     6     4     3      fpmd
+#
+#   n    l    f        energy (Ha)
+    1    0    2.00
+    2    0    2.00
+    2    1    6.00
+    3    0    2.00
+    3    1    6.00
+    3    2   10.00
+    4    0    2.00
+    4    1    6.00
+    5    0    2.00
+    4    2    4.00
+#
+# PSEUDOPOTENTIAL AND OPTIMIZATION
+# lmax
+    2
+#
+#   l,   rc,     ep,   ncon, nbas, qcut
+    0   2.31752  -2.46646    5    8   6.14340
+    1   2.51934  -1.51214    5    8   5.89847
+    2   2.58017  -0.21312    5    8   5.73514
+#
+# LOCAL POTENTIAL
+# lloc, lpopt,  rc(5),   dvloc0
+    4    5   1.54485      0.00000
+#
+# VANDERBILT-KLEINMAN-BYLANDER PROJECTORs
+# l, nproj, debl
+    0    2   2.27972
+    1    2   1.55891
+    2    2   1.36726
+#
+# MODEL CORE CHARGE
+# icmod, fcfact
+    0   0.00000
+#
+# LOG DERIVATIVE ANALYSIS
+# epsh1, epsh2, depsh
+   -5.00    3.00    0.02
+#
+# OUTPUT GRID
+# rlmax, drl
+    6.00    0.01
+#
+# TEST CONFIGURATIONS
+# ncnf
+    0
+# nvcnf
+#   n    l    f
+ </description>
+ <symbol>Mo</symbol>
+ <atomic_number>42</atomic_number>
+ <mass>95.96</mass>
+ <norm_conserving_semilocal_pseudopotential>
+ <valence_charge>14</valence_charge>
+ <mesh_spacing>0.01</mesh_spacing>
+ </norm_conserving_semilocal_pseudopotential>
+</species>
+ SLPP semilocal potential
+ rcps_ =   1.5
+[qbox] [qbox] <cmd>set cell 6.0337 0  0 -3.0169 5.2254  0  0 0 26.4236</cmd>
+<unit_cell 
+    a="  6.03370000   0.00000000   0.00000000"
+    b=" -3.01690000   5.22540000   0.00000000"
+    c="  0.00000000   0.00000000  26.42360000" />
+[qbox] <cmd>atom Mo Mo 0 0 6.6059</cmd>
+[qbox] <cmd>atom S1 Sulfur -0.0000    3.4836    9.5656</cmd>
+[qbox] <cmd>atom S2 Sulfur -0.0000    3.4836    3.6462</cmd>
+[qbox] <cmd>#</cmd>
+[qbox] <cmd>#set cell   5.2032493 -3.0040974  0.0000000 5.2032493  3.0040974  0.0000000 0.0000000  0.0000000 43.7178659</cmd>
+[qbox] <cmd>#atom M1 Mo 3.2302464  0.1283354 22.4715422</cmd>
+[qbox] <cmd>#atom S1 Sulfur 6.6990968  0.1283049 19.5142971</cmd>
+[qbox] <cmd>#atom S2 Sulfur 6.6990969  0.1283048 25.4292958</cmd>
+[qbox] [qbox] <cmd>set xc LDA</cmd>
+[qbox] <cmd>set ecut 65</cmd>
+[qbox] <cmd>set ecutprec 4</cmd>
+[qbox] <cmd>set wf_dyn PSD</cmd>
+[qbox] <cmd>set scf_tol 0.00000001</cmd>
+[qbox] <cmd>randomize_wf</cmd>
+[qbox] <cmd>run 0 200</cmd>
+  EnergyFunctional: np0v,np1v,np2v: 36 36 144
+  EnergyFunctional: vft->np012(): 186624
+<wavefunction ecut="32.50000000" nspin="1" nel="26" nempty="0">
+<cell a="6.033700 0.000000 0.000000"
+      b="-3.016900 5.225400 0.000000"
+      c="0.000000 0.000000 26.423600"/>
+ reciprocal lattice vectors
+ 1.041349 0.601226 -0.000000
+ 0.000000 1.202431 0.000000
+ 0.000000 -0.000000 0.237787
+<refcell a="0.000000 0.000000 0.000000"
+         b="0.000000 0.000000 0.000000"
+         c="0.000000 0.000000 0.000000"/>
+<grid nx="18" ny="18" nz="70"/>
+ kpoint: 0.000000 0.000000 0.000000 weight: 1.000000
+<slater_determinant kpoint="0.000000 0.000000 0.000000" size="13">
+ sdcontext: 1x1
+ basis size: 3709
+ c dimensions: 3709x13   (3709x13 blocks)
+ <density_matrix form="diagonal" size="13">
+ </density_matrix>
+</slater_determinant>
+</wavefunction>
+<iteration count="1">
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  97.77029230 </eigenvalue_sum>
+  <etotal_int>     280.91240040 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -21.27009069 </eigenvalue_sum>
+  <etotal_int>     -26.93436541 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -23.62829473 </eigenvalue_sum>
+  <etotal_int>     -67.95962071 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -21.63904358 </eigenvalue_sum>
+  <etotal_int>     -79.04214469 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -19.39471194 </eigenvalue_sum>
+  <etotal_int>     -83.54123736 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -17.66075129 </eigenvalue_sum>
+  <etotal_int>     -85.43579880 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -16.43300204 </eigenvalue_sum>
+  <etotal_int>     -86.32662623 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -15.53091185 </eigenvalue_sum>
+  <etotal_int>     -86.82788959 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -14.83252305 </eigenvalue_sum>
+  <etotal_int>     -87.15674784 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -14.26831843 </eigenvalue_sum>
+  <etotal_int>     -87.39678255 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -13.79787172 </eigenvalue_sum>
+  <etotal_int>     -87.58489220 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -13.39600516 </eigenvalue_sum>
+  <etotal_int>     -87.73968092 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -13.04604307 </eigenvalue_sum>
+  <etotal_int>     -87.87152811 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -12.73653169 </eigenvalue_sum>
+  <etotal_int>     -87.98659719 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -12.45952982 </eigenvalue_sum>
+  <etotal_int>     -88.08865883 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -12.20958657 </eigenvalue_sum>
+  <etotal_int>     -88.18004625 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -11.98302484 </eigenvalue_sum>
+  <etotal_int>     -88.26222338 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -11.77737831 </eigenvalue_sum>
+  <etotal_int>     -88.33615056 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -11.59093730 </eigenvalue_sum>
+  <etotal_int>     -88.40252268 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -11.42240026 </eigenvalue_sum>
+  <etotal_int>     -88.46191639 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -11.27063319 </eigenvalue_sum>
+  <etotal_int>     -88.51487050 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -11.13452889 </eigenvalue_sum>
+  <etotal_int>     -88.56192053 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -11.01294595 </eigenvalue_sum>
+  <etotal_int>     -88.60360515 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.90470171 </eigenvalue_sum>
+  <etotal_int>     -88.64045864 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.80859455 </eigenvalue_sum>
+  <etotal_int>     -88.67299859 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.72343660 </eigenvalue_sum>
+  <etotal_int>     -88.70171443 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.64808504 </eigenvalue_sum>
+  <etotal_int>     -88.72705905 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.58146610 </eigenvalue_sum>
+  <etotal_int>     -88.74944403 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.52259028 </eigenvalue_sum>
+  <etotal_int>     -88.76923801 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.47055949 </eigenvalue_sum>
+  <etotal_int>     -88.78676747 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.42456795 </eigenvalue_sum>
+  <etotal_int>     -88.80231909 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.38389880 </eigenvalue_sum>
+  <etotal_int>     -88.81614303 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.34791800 </eigenvalue_sum>
+  <etotal_int>     -88.82845661 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.31606705 </eigenvalue_sum>
+  <etotal_int>     -88.83944809 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.28785513 </eigenvalue_sum>
+  <etotal_int>     -88.84928028 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.26285151 </eigenvalue_sum>
+  <etotal_int>     -88.85809387 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.24067832 </eigenvalue_sum>
+  <etotal_int>     -88.86601051 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.22100408 </eigenvalue_sum>
+  <etotal_int>     -88.87313542 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.20353783 </eigenvalue_sum>
+  <etotal_int>     -88.87955976 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.18802399 </eigenvalue_sum>
+  <etotal_int>     -88.88536266 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.17423789 </eigenvalue_sum>
+  <etotal_int>     -88.89061291 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.16198178 </eigenvalue_sum>
+  <etotal_int>     -88.89537053 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.15108152 </eigenvalue_sum>
+  <etotal_int>     -88.89968794 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14138355 </eigenvalue_sum>
+  <etotal_int>     -88.90361111 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13275236 </eigenvalue_sum>
+  <etotal_int>     -88.90718043 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.12506827 </eigenvalue_sum>
+  <etotal_int>     -88.91043148 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.11822549 </eigenvalue_sum>
+  <etotal_int>     -88.91339573 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.11213044 </eigenvalue_sum>
+  <etotal_int>     -88.91610104 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.10670029 </eigenvalue_sum>
+  <etotal_int>     -88.91857219 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.10186166 </eigenvalue_sum>
+  <etotal_int>     -88.92083123 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.09754952 </eigenvalue_sum>
+  <etotal_int>     -88.92289787 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.09370621 </eigenvalue_sum>
+  <etotal_int>     -88.92478974 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.09028056 </eigenvalue_sum>
+  <etotal_int>     -88.92652266 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.08722715 </eigenvalue_sum>
+  <etotal_int>     -88.92811086 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.08450563 </eigenvalue_sum>
+  <etotal_int>     -88.92956714 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.08208015 </eigenvalue_sum>
+  <etotal_int>     -88.93090307 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.07991885 </eigenvalue_sum>
+  <etotal_int>     -88.93212910 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.07799336 </eigenvalue_sum>
+  <etotal_int>     -88.93325470 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.07627847 </eigenvalue_sum>
+  <etotal_int>     -88.93428844 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.07475172 </eigenvalue_sum>
+  <etotal_int>     -88.93523813 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.07339310 </eigenvalue_sum>
+  <etotal_int>     -88.93611084 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.07218478 </eigenvalue_sum>
+  <etotal_int>     -88.93691302 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.07111088 </eigenvalue_sum>
+  <etotal_int>     -88.93765056 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.07015721 </eigenvalue_sum>
+  <etotal_int>     -88.93832881 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06931112 </eigenvalue_sum>
+  <etotal_int>     -88.93895266 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06856131 </eigenvalue_sum>
+  <etotal_int>     -88.93952658 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06789770 </eigenvalue_sum>
+  <etotal_int>     -88.94005466 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06731127 </eigenvalue_sum>
+  <etotal_int>     -88.94054064 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06679394 </eigenvalue_sum>
+  <etotal_int>     -88.94098794 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06633852 </eigenvalue_sum>
+  <etotal_int>     -88.94139969 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06593853 </eigenvalue_sum>
+  <etotal_int>     -88.94177878 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06558819 </eigenvalue_sum>
+  <etotal_int>     -88.94212783 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06528233 </eigenvalue_sum>
+  <etotal_int>     -88.94244926 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06501630 </eigenvalue_sum>
+  <etotal_int>     -88.94274529 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06478594 </eigenvalue_sum>
+  <etotal_int>     -88.94301794 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06458751 </eigenvalue_sum>
+  <etotal_int>     -88.94326910 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06441766 </eigenvalue_sum>
+  <etotal_int>     -88.94350048 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06427337 </eigenvalue_sum>
+  <etotal_int>     -88.94371365 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06415195 </eigenvalue_sum>
+  <etotal_int>     -88.94391006 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06405096 </eigenvalue_sum>
+  <etotal_int>     -88.94409105 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06396821 </eigenvalue_sum>
+  <etotal_int>     -88.94425783 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06390175 </eigenvalue_sum>
+  <etotal_int>     -88.94441155 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06384980 </eigenvalue_sum>
+  <etotal_int>     -88.94455322 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06381078 </eigenvalue_sum>
+  <etotal_int>     -88.94468381 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06378325 </eigenvalue_sum>
+  <etotal_int>     -88.94480418 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06376592 </eigenvalue_sum>
+  <etotal_int>     -88.94491516 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06375765 </eigenvalue_sum>
+  <etotal_int>     -88.94501747 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06375738 </eigenvalue_sum>
+  <etotal_int>     -88.94511180 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06376417 </eigenvalue_sum>
+  <etotal_int>     -88.94519877 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06377717 </eigenvalue_sum>
+  <etotal_int>     -88.94527898 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06379563 </eigenvalue_sum>
+  <etotal_int>     -88.94535295 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06381886 </eigenvalue_sum>
+  <etotal_int>     -88.94542116 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06384624 </eigenvalue_sum>
+  <etotal_int>     -88.94548408 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06387721 </eigenvalue_sum>
+  <etotal_int>     -88.94554212 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06391128 </eigenvalue_sum>
+  <etotal_int>     -88.94559565 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06394800 </eigenvalue_sum>
+  <etotal_int>     -88.94564504 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06398695 </eigenvalue_sum>
+  <etotal_int>     -88.94569060 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06402779 </eigenvalue_sum>
+  <etotal_int>     -88.94573265 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06407017 </eigenvalue_sum>
+  <etotal_int>     -88.94577144 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06411382 </eigenvalue_sum>
+  <etotal_int>     -88.94580724 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06415847 </eigenvalue_sum>
+  <etotal_int>     -88.94584028 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06420388 </eigenvalue_sum>
+  <etotal_int>     -88.94587077 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06424984 </eigenvalue_sum>
+  <etotal_int>     -88.94589891 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06429617 </eigenvalue_sum>
+  <etotal_int>     -88.94592490 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06434271 </eigenvalue_sum>
+  <etotal_int>     -88.94594888 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06438929 </eigenvalue_sum>
+  <etotal_int>     -88.94597103 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06443580 </eigenvalue_sum>
+  <etotal_int>     -88.94599148 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06448211 </eigenvalue_sum>
+  <etotal_int>     -88.94601036 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06452812 </eigenvalue_sum>
+  <etotal_int>     -88.94602780 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06457374 </eigenvalue_sum>
+  <etotal_int>     -88.94604391 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06461890 </eigenvalue_sum>
+  <etotal_int>     -88.94605879 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06466351 </eigenvalue_sum>
+  <etotal_int>     -88.94607253 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06470753 </eigenvalue_sum>
+  <etotal_int>     -88.94608523 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06475090 </eigenvalue_sum>
+  <etotal_int>     -88.94609697 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06479357 </eigenvalue_sum>
+  <etotal_int>     -88.94610781 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06483551 </eigenvalue_sum>
+  <etotal_int>     -88.94611783 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06487668 </eigenvalue_sum>
+  <etotal_int>     -88.94612710 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06491707 </eigenvalue_sum>
+  <etotal_int>     -88.94613566 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06495664 </eigenvalue_sum>
+  <etotal_int>     -88.94614358 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06499539 </eigenvalue_sum>
+  <etotal_int>     -88.94615091 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06503329 </eigenvalue_sum>
+  <etotal_int>     -88.94615768 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06507035 </eigenvalue_sum>
+  <etotal_int>     -88.94616394 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06510655 </eigenvalue_sum>
+  <etotal_int>     -88.94616974 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06514188 </eigenvalue_sum>
+  <etotal_int>     -88.94617510 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06517636 </eigenvalue_sum>
+  <etotal_int>     -88.94618006 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06520998 </eigenvalue_sum>
+  <etotal_int>     -88.94618465 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06524275 </eigenvalue_sum>
+  <etotal_int>     -88.94618890 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06527466 </eigenvalue_sum>
+  <etotal_int>     -88.94619283 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06530573 </eigenvalue_sum>
+  <etotal_int>     -88.94619648 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06533597 </eigenvalue_sum>
+  <etotal_int>     -88.94619985 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06536539 </eigenvalue_sum>
+  <etotal_int>     -88.94620298 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06539399 </eigenvalue_sum>
+  <etotal_int>     -88.94620587 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06542179 </eigenvalue_sum>
+  <etotal_int>     -88.94620855 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06544881 </eigenvalue_sum>
+  <etotal_int>     -88.94621104 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06547504 </eigenvalue_sum>
+  <etotal_int>     -88.94621335 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06550052 </eigenvalue_sum>
+  <etotal_int>     -88.94621548 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06552525 </eigenvalue_sum>
+  <etotal_int>     -88.94621746 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06554924 </eigenvalue_sum>
+  <etotal_int>     -88.94621930 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06557252 </eigenvalue_sum>
+  <etotal_int>     -88.94622101 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06559509 </eigenvalue_sum>
+  <etotal_int>     -88.94622259 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06561698 </eigenvalue_sum>
+  <etotal_int>     -88.94622406 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06563820 </eigenvalue_sum>
+  <etotal_int>     -88.94622542 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06565876 </eigenvalue_sum>
+  <etotal_int>     -88.94622669 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06567868 </eigenvalue_sum>
+  <etotal_int>     -88.94622787 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06569797 </eigenvalue_sum>
+  <etotal_int>     -88.94622896 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06571666 </eigenvalue_sum>
+  <etotal_int>     -88.94622997 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06573475 </eigenvalue_sum>
+  <etotal_int>     -88.94623092 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06575227 </eigenvalue_sum>
+  <etotal_int>     -88.94623179 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06576922 </eigenvalue_sum>
+  <etotal_int>     -88.94623261 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06578562 </eigenvalue_sum>
+  <etotal_int>     -88.94623337 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06580150 </eigenvalue_sum>
+  <etotal_int>     -88.94623408 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06581685 </eigenvalue_sum>
+  <etotal_int>     -88.94623473 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06583170 </eigenvalue_sum>
+  <etotal_int>     -88.94623535 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06584606 </eigenvalue_sum>
+  <etotal_int>     -88.94623592 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06585994 </eigenvalue_sum>
+  <etotal_int>     -88.94623645 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06587336 </eigenvalue_sum>
+  <etotal_int>     -88.94623694 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06588634 </eigenvalue_sum>
+  <etotal_int>     -88.94623740 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06589888 </eigenvalue_sum>
+  <etotal_int>     -88.94623784 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06591099 </eigenvalue_sum>
+  <etotal_int>     -88.94623824 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06592270 </eigenvalue_sum>
+  <etotal_int>     -88.94623861 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06593401 </eigenvalue_sum>
+  <etotal_int>     -88.94623896 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06594493 </eigenvalue_sum>
+  <etotal_int>     -88.94623929 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06595549 </eigenvalue_sum>
+  <etotal_int>     -88.94623959 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06596568 </eigenvalue_sum>
+  <etotal_int>     -88.94623988 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06597552 </eigenvalue_sum>
+  <etotal_int>     -88.94624014 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06598502 </eigenvalue_sum>
+  <etotal_int>     -88.94624039 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06599419 </eigenvalue_sum>
+  <etotal_int>     -88.94624063 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06600304 </eigenvalue_sum>
+  <etotal_int>     -88.94624084 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06601159 </eigenvalue_sum>
+  <etotal_int>     -88.94624105 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06601984 </eigenvalue_sum>
+  <etotal_int>     -88.94624124 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06602779 </eigenvalue_sum>
+  <etotal_int>     -88.94624142 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06603547 </eigenvalue_sum>
+  <etotal_int>     -88.94624159 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06604288 </eigenvalue_sum>
+  <etotal_int>     -88.94624174 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06605003 </eigenvalue_sum>
+  <etotal_int>     -88.94624189 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06605693 </eigenvalue_sum>
+  <etotal_int>     -88.94624203 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06606358 </eigenvalue_sum>
+  <etotal_int>     -88.94624216 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06607000 </eigenvalue_sum>
+  <etotal_int>     -88.94624228 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06607619 </eigenvalue_sum>
+  <etotal_int>     -88.94624240 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06608215 </eigenvalue_sum>
+  <etotal_int>     -88.94624250 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06608791 </eigenvalue_sum>
+  <etotal_int>     -88.94624261 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06609346 </eigenvalue_sum>
+  <etotal_int>     -88.94624270 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06609881 </eigenvalue_sum>
+  <etotal_int>     -88.94624279 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06610396 </eigenvalue_sum>
+  <etotal_int>     -88.94624287 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06610893 </eigenvalue_sum>
+  <etotal_int>     -88.94624295 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06611373 </eigenvalue_sum>
+  <etotal_int>     -88.94624303 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06611834 </eigenvalue_sum>
+  <etotal_int>     -88.94624310 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06612280 </eigenvalue_sum>
+  <etotal_int>     -88.94624316 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06612709 </eigenvalue_sum>
+  <etotal_int>     -88.94624323 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06613122 </eigenvalue_sum>
+  <etotal_int>     -88.94624329 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06613521 </eigenvalue_sum>
+  <etotal_int>     -88.94624334 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06613904 </eigenvalue_sum>
+  <etotal_int>     -88.94624339 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06614274 </eigenvalue_sum>
+  <etotal_int>     -88.94624344 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06614631 </eigenvalue_sum>
+  <etotal_int>     -88.94624349 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06614974 </eigenvalue_sum>
+  <etotal_int>     -88.94624354 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06615305 </eigenvalue_sum>
+  <etotal_int>     -88.94624358 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06615623 </eigenvalue_sum>
+  <etotal_int>     -88.94624362 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06615930 </eigenvalue_sum>
+  <etotal_int>     -88.94624365 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06616226 </eigenvalue_sum>
+  <etotal_int>     -88.94624369 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06616511 </eigenvalue_sum>
+  <etotal_int>     -88.94624372 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.06616785 </eigenvalue_sum>
+  <etotal_int>     -88.94624376 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <ekin>        29.58293979 </ekin>
+  <econf>        0.00000000 </econf>
+  <eps>        -45.17580621 </eps>
+  <enl>          8.92037126 </enl>
+  <ecoul>      -69.99567976 </ecoul>
+  <exc>        -12.27806886 </exc>
+  <esr>          0.26268220 </esr>
+  <eself>       71.27768743 </eself>
+  <ets>          0.00000000 </ets>
+  <eexf>         0.00000000 </eexf>
+  <etotal>     -88.94624379 </etotal>
+  <epv>          0.00000000 </epv>
+  <eefield>      0.00000000 </eefield>
+  <enthalpy>   -88.94624379 </enthalpy>
+<atomset>
+<unit_cell 
+    a="  6.03370000   0.00000000   0.00000000"
+    b=" -3.01690000   5.22540000   0.00000000"
+    c="  0.00000000   0.00000000  26.42360000" />
+  <atom name="S1" species="Sulfur">
+    <position> -0.00000000 3.48360000 9.56560000 </position>
+    <velocity> 0.00000000 0.00000000 0.00000000 </velocity>
+    <force> 0.00002643 -0.00001070 -0.06325232 </force>
+  </atom>
+  <atom name="S2" species="Sulfur">
+    <position> -0.00000000 3.48360000 3.64620000 </position>
+    <velocity> 0.00000000 0.00000000 0.00000000 </velocity>
+    <force> -0.00000421 0.00001083 0.06325882 </force>
+  </atom>
+  <atom name="Mo" species="Mo">
+    <position> 0.00000000 0.00000000 6.60590000 </position>
+    <velocity> 0.00000000 0.00000000 0.00000000 </velocity>
+    <force> -0.00000655 -0.00006369 -0.00000993 </force>
+  </atom>
+</atomset>
+<unit_cell_a_norm> 6.033700 </unit_cell_a_norm>
+<unit_cell_b_norm> 6.033779 </unit_cell_b_norm>
+<unit_cell_c_norm> 26.423600 </unit_cell_c_norm>
+<unit_cell_alpha>  90.000 </unit_cell_alpha>
+<unit_cell_beta>   90.000 </unit_cell_beta>
+<unit_cell_gamma>  120.000 </unit_cell_gamma>
+<unit_cell_volume> 833.096 </unit_cell_volume>
+<timing name="iteration"       min="18.172" max="18.172"/>
+</iteration>
+<timing name="charge"          min="3.633" max="3.633"/>
+<timing name="energy"          min="11.077" max="11.077"/>
+<timing name="gram"            min="0.380" max="0.380"/>
+<timing name="psd_residual"    min="0.467" max="0.467"/>
+<timing name="psd_update_wf"   min="0.050" max="0.050"/>
+<timing name="update_vhxc"     min="2.382" max="2.382"/>
+<timing name="wf_update"       min="1.044" max="1.044"/>
+<timing name="ekin"            min="0.176" max="0.176"/>
+<timing name="exc"             min="1.372" max="1.372"/>
+<timing name="hpsi"            min="5.049" max="5.049"/>
+<timing name="nonlocal"        min="5.834" max="5.834"/>
+<timing name="charge_compute"  min="2.745" max="2.745"/>
+<timing name="charge_integral" min="0.085" max="0.085"/>
+<timing name="charge_rowsum"   min="0.071" max="0.071"/>
+<timing name="charge_vft"      min="0.725" max="0.725"/>
+[qbox] <cmd>band.i</cmd>
+[qbox][band.i] <cmd>set wf_dyn JD </cmd>
+<cmd># JD may be better for unoccupied states</cmd>
+[qbox][band.i] <cmd>set nempty 8 </cmd>
+<cmd># add 8 empty bands</cmd>
+[qbox][band.i] <cmd># ------------------------------ Gamma point to M point ------------------------------</cmd>
+[qbox][band.i] <cmd>kpoint add 0.00000000 0.00000000 0.00000000   0.000</cmd>
+ Wavefunction::add_kpoint: kpoint already defined
+[qbox][band.i] <cmd>kpoint add 0.00251256 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.00502512 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.00753768 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.01005025 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.01256281 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.01507537 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.01758793 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.02010050 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.02261306 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.02512562 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.02763819 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.03015075 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.03266331 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.03517587 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.03768844 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.04020100 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.04271356 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.04522613 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.04773869 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.05025125 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.05276381 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.05527638 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.05778894 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.06030150 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.06281407 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.06532663 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.06783919 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.07035175 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.07286432 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.07537688 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.07788944 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.08040201 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.08291457 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.08542713 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.08793969 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.09045226 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.09296482 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.09547738 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.09798994 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.10050251 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.10301507 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.10552763 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.10804020 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.11055276 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.11306532 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.11557788 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.11809045 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.12060301 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.12311557 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.12562814 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.12814070 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.13065326 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.13316582 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.13567839 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.13819095 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.14070351 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.14321608 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.14572864 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.14824120 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.15075376 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.15326633 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.15577889 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.15829145 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.16080402 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.16331658 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.16582914 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.16834170 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.17085427 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.17336683 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.17587939 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.17839195 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.18090452 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.18341708 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.18592964 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.18844221 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.19095477 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.19346733 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.19597989 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.19849246 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.20100502 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.20351758 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.20603015 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.20854271 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.21105527 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.21356783 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.21608040 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.21859296 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.22110552 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.22361809 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.22613065 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.22864321 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.23115577 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.23366834 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.23618090 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.23869346 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.24120603 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.24371859 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.24623115 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.24874371 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.25125628 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.25376884 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.25628140 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.25879396 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.26130653 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.26381909 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.26633165 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.26884422 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.27135678 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.27386934 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.27638190 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.27889447 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.28140703 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.28391959 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.28643216 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.28894472 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.29145728 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.29396984 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.29648241 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.29899497 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.30150753 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.30402010 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.30653266 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.30904522 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.31155778 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.31407035 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.31658291 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.31909547 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.32160804 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.32412060 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.32663316 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.32914572 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.33165829 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.33417085 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.33668341 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.33919597 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.34170854 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.34422110 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.34673366 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.34924623 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.35175879 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.35427135 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.35678391 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.35929648 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.36180904 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.36432160 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.36683417 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.36934673 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.37185929 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.37437185 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.37688442 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.37939698 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.38190954 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.38442211 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.38693467 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.38944723 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.39195979 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.39447236 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.39698492 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.39949748 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.40201005 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.40452261 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.40703517 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.40954773 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.41206030 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.41457286 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.41708542 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.41959798 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.42211055 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.42462311 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.42713567 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.42964824 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.43216080 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.43467336 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.43718592 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.43969849 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.44221105 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.44472361 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.44723618 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.44974874 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.45226130 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.45477386 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.45728643 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.45979899 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.46231155 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.46482412 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.46733668 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.46984924 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.47236180 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.47487437 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.47738693 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.47989949 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.48241206 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.48492462 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.48743718 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.48994974 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.49246231 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.49497487 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.49748743 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.50000000 0.00000000 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd># ------------------------------ M point to K point ------------------------------</cmd>
+[qbox][band.i] <cmd>kpoint add 0.50000000 0.00000000 0.00000000   0.000</cmd>
+ Wavefunction::add_kpoint: kpoint already defined
+[qbox][band.i] <cmd>kpoint add 0.49831649 0.00336700 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.49663299 0.00673400 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.49494949 0.01010101 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.49326599 0.01346801 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.49158249 0.01683501 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.48989898 0.02020202 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.48821548 0.02356902 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.48653198 0.02693602 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.48484848 0.03030303 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.48316498 0.03367003 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.48148148 0.03703703 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.47979797 0.04040404 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.47811447 0.04377104 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.47643097 0.04713804 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.47474747 0.05050505 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.47306397 0.05387205 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.47138047 0.05723905 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.46969696 0.06060606 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.46801346 0.06397306 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.46632996 0.06734006 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.46464646 0.07070707 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.46296296 0.07407407 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.46127946 0.07744107 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.45959595 0.08080808 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.45791245 0.08417508 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.45622895 0.08754208 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.45454545 0.09090909 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.45286195 0.09427609 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.45117845 0.09764309 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.44949494 0.10101010 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.44781144 0.10437710 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.44612794 0.10774410 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.44444444 0.11111111 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.44276094 0.11447811 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.44107744 0.11784511 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.43939393 0.12121212 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.43771043 0.12457912 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.43602693 0.12794612 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.43434343 0.13131313 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.43265993 0.13468013 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.43097643 0.13804713 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.42929292 0.14141414 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.42760942 0.14478114 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.42592592 0.14814814 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.42424242 0.15151515 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.42255892 0.15488215 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.42087542 0.15824915 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.41919191 0.16161616 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.41750841 0.16498316 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.41582491 0.16835016 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.41414141 0.17171717 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.41245791 0.17508417 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.41077441 0.17845117 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.40909090 0.18181818 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.40740740 0.18518518 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.40572390 0.18855218 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.40404040 0.19191919 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.40235690 0.19528619 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.40067340 0.19865319 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.39898989 0.20202020 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.39730639 0.20538720 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.39562289 0.20875420 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.39393939 0.21212121 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.39225589 0.21548821 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.39057239 0.21885521 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.38888888 0.22222222 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.38720538 0.22558922 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.38552188 0.22895622 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.38383838 0.23232323 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.38215488 0.23569023 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.38047138 0.23905723 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.37878787 0.24242424 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.37710437 0.24579124 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.37542087 0.24915824 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.37373737 0.25252525 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.37205387 0.25589225 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.37037037 0.25925925 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.36868686 0.26262626 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.36700336 0.26599326 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.36531986 0.26936026 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.36363636 0.27272727 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.36195286 0.27609427 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.36026936 0.27946127 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.35858585 0.28282828 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.35690235 0.28619528 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.35521885 0.28956228 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.35353535 0.29292929 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.35185185 0.29629629 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.35016835 0.29966329 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.34848484 0.30303030 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.34680134 0.30639730 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.34511784 0.30976430 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.34343434 0.31313131 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.34175084 0.31649831 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.34006734 0.31986531 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.33838383 0.32323232 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.33670033 0.32659932 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.33501683 0.32996632 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.33333333 0.33333333 0.00000000   0.000</cmd>
+ Basis::resize: warning: 0.333 0.333 0.000 out of the BZ: 0.347 0.601 0.000
+[qbox][band.i] <cmd># ------------------------------ K point to Gamma point ------------------------------</cmd>
+[qbox][band.i] <cmd>kpoint add 0.33333333 0.33333333 0.00000000   0.000</cmd>
+ Wavefunction::add_kpoint: kpoint already defined
+[qbox][band.i] <cmd>kpoint add 0.33165829 0.33165829 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.32998324 0.32998324 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.32830820 0.32830820 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.32663316 0.32663316 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.32495812 0.32495812 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.32328308 0.32328308 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.32160804 0.32160804 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.31993299 0.31993299 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.31825795 0.31825795 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.31658291 0.31658291 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.31490787 0.31490787 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.31323283 0.31323283 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.31155778 0.31155778 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.30988274 0.30988274 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.30820770 0.30820770 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.30653266 0.30653266 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.30485762 0.30485762 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.30318257 0.30318257 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.30150753 0.30150753 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.29983249 0.29983249 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.29815745 0.29815745 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.29648241 0.29648241 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.29480737 0.29480737 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.29313232 0.29313232 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.29145728 0.29145728 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.28978224 0.28978224 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.28810720 0.28810720 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.28643216 0.28643216 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.28475711 0.28475711 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.28308207 0.28308207 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.28140703 0.28140703 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.27973199 0.27973199 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.27805695 0.27805695 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.27638190 0.27638190 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.27470686 0.27470686 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.27303182 0.27303182 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.27135678 0.27135678 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.26968174 0.26968174 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.26800670 0.26800670 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.26633165 0.26633165 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.26465661 0.26465661 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.26298157 0.26298157 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.26130653 0.26130653 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.25963149 0.25963149 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.25795644 0.25795644 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.25628140 0.25628140 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.25460636 0.25460636 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.25293132 0.25293132 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.25125628 0.25125628 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.24958123 0.24958123 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.24790619 0.24790619 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.24623115 0.24623115 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.24455611 0.24455611 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.24288107 0.24288107 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.24120603 0.24120603 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.23953098 0.23953098 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.23785594 0.23785594 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.23618090 0.23618090 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.23450586 0.23450586 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.23283082 0.23283082 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.23115577 0.23115577 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.22948073 0.22948073 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.22780569 0.22780569 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.22613065 0.22613065 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.22445561 0.22445561 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.22278056 0.22278056 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.22110552 0.22110552 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.21943048 0.21943048 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.21775544 0.21775544 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.21608040 0.21608040 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.21440536 0.21440536 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.21273031 0.21273031 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.21105527 0.21105527 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.20938023 0.20938023 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.20770519 0.20770519 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.20603015 0.20603015 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.20435510 0.20435510 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.20268006 0.20268006 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.20100502 0.20100502 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.19932998 0.19932998 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.19765494 0.19765494 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.19597989 0.19597989 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.19430485 0.19430485 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.19262981 0.19262981 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.19095477 0.19095477 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.18927973 0.18927973 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.18760469 0.18760469 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.18592964 0.18592964 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.18425460 0.18425460 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.18257956 0.18257956 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.18090452 0.18090452 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.17922948 0.17922948 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.17755443 0.17755443 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.17587939 0.17587939 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.17420435 0.17420435 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.17252931 0.17252931 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.17085427 0.17085427 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.16917922 0.16917922 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.16750418 0.16750418 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.16582914 0.16582914 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.16415410 0.16415410 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.16247906 0.16247906 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.16080402 0.16080402 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.15912897 0.15912897 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.15745393 0.15745393 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.15577889 0.15577889 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.15410385 0.15410385 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.15242881 0.15242881 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.15075376 0.15075376 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.14907872 0.14907872 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.14740368 0.14740368 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.14572864 0.14572864 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.14405360 0.14405360 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.14237855 0.14237855 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.14070351 0.14070351 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.13902847 0.13902847 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.13735343 0.13735343 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.13567839 0.13567839 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.13400335 0.13400335 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.13232830 0.13232830 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.13065326 0.13065326 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.12897822 0.12897822 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.12730318 0.12730318 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.12562814 0.12562814 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.12395309 0.12395309 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.12227805 0.12227805 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.12060301 0.12060301 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.11892797 0.11892797 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.11725293 0.11725293 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.11557788 0.11557788 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.11390284 0.11390284 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.11222780 0.11222780 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.11055276 0.11055276 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.10887772 0.10887772 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.10720268 0.10720268 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.10552763 0.10552763 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.10385259 0.10385259 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.10217755 0.10217755 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.10050251 0.10050251 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.09882747 0.09882747 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.09715242 0.09715242 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.09547738 0.09547738 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.09380234 0.09380234 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.09212730 0.09212730 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.09045226 0.09045226 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.08877721 0.08877721 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.08710217 0.08710217 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.08542713 0.08542713 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.08375209 0.08375209 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.08207705 0.08207705 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.08040201 0.08040201 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.07872696 0.07872696 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.07705192 0.07705192 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.07537688 0.07537688 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.07370184 0.07370184 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.07202680 0.07202680 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.07035175 0.07035175 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.06867671 0.06867671 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.06700167 0.06700167 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.06532663 0.06532663 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.06365159 0.06365159 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.06197654 0.06197654 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.06030150 0.06030150 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.05862646 0.05862646 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.05695142 0.05695142 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.05527638 0.05527638 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.05360134 0.05360134 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.05192629 0.05192629 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.05025125 0.05025125 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.04857621 0.04857621 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.04690117 0.04690117 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.04522613 0.04522613 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.04355108 0.04355108 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.04187604 0.04187604 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.04020100 0.04020100 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.03852596 0.03852596 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.03685092 0.03685092 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.03517587 0.03517587 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.03350083 0.03350083 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.03182579 0.03182579 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.03015075 0.03015075 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.02847571 0.02847571 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.02680067 0.02680067 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.02512562 0.02512562 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.02345058 0.02345058 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.02177554 0.02177554 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.02010050 0.02010050 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.01842546 0.01842546 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.01675041 0.01675041 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.01507537 0.01507537 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.01340033 0.01340033 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.01172529 0.01172529 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.01005025 0.01005025 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.00837520 0.00837520 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.00670016 0.00670016 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.00502512 0.00502512 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.00335008 0.00335008 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.00167504 0.00167504 0.00000000   0.000</cmd>
+[qbox][band.i] <cmd>kpoint add 0.00000000 0.00000000 0.00000000   0.000</cmd>
+ Wavefunction::add_kpoint: kpoint already defined
+[qbox][band.i] <cmd># -------------------------------------------------------------------------------------</cmd>
+[qbox][band.i] <cmd>run 0 1 300 </cmd>
+<cmd># 200 non-SCF steps, which may not be enough!</cmd>
+ Basis::resize: warning: 0.333 0.333 0.000 out of the BZ: 0.347 0.601 0.000

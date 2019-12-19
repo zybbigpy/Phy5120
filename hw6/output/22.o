@@ -1,0 +1,976 @@
+--------------------------------------------------------------------------
+[[29699,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: ip-172-31-19-165
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<fpmd:simulation xmlns:fpmd="http://www.quantum-simulation.org/ns/fpmd/fpmd-1.0">
+<uuid> 3f374e6a-213c-11ea-bc63-06b03d31dcd0 </uuid>
+
+                   ============================
+                   I qbox 1.63.8              I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I                          I
+                   I http://qboxcode.org      I
+                   ============================
+
+
+<release> 1.63.8  </release>
+<svn_version>  </svn_version>
+<user> ubuntu </user>
+<sysname> Linux </sysname>
+<nodename> ip-172-31-19-165 </nodename>
+<start_time> 2019-12-18T02:15:23Z </start_time>
+<mpi_processes count="1">
+<process id="0"> ip-172-31-19-165 </process>
+</mpi_processes>
+[qbox] <cmd>species Sulfur S_ONCV_LDA-1.1.xml</cmd>
+  SpeciesCmd: defining species Sulfur as S_ONCV_LDA-1.1.xml
+
+Warning at file , line 0, char 0
+  Message: unable to open primary document entity '/home/ubuntu/MoS2/species.xsd'
+
+ species Sulfur:
+<species name="Sulfur">
+ <description>
+
+
+ This pseudopotential file has been produced using the code
+ ONCVPSP  (Optimized Norm-Conservinng Vanderbilt PSeudopotential)
+ scalar-relativistic version 2.1.1, 03/26/2014 by D. R. Hamann
+ The code is available through a link at URL www.mat-simresearch.com.
+ Documentation with the package provides a full discription of the
+ input data below.
+
+
+ While it is not required under the terms of the GNU GPL, it is
+ suggested that you cite D. R. Hamann, Phys. Rev. B 88, 085117 (2013)
+ in any publication using these pseudopotentials.
+
+
+ Copyright 2015 The Regents of the University of California
+ 
+ This work is licensed under the Creative Commons Attribution-ShareAlike 
+ 4.0 International License. To view a copy of this license, visit 
+ http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to 
+ Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+ 
+ This pseudopotential is part of the Schlipf-Gygi norm-conserving 
+ pseudopotential library. Its construction parameters were tuned to 
+ reproduce materials of a training set with very high accuracy and 
+ should be suitable as a general purpose pseudopotential to treat a 
+ variety of different compounds. For details of the construction and 
+ testing of the pseudopotential please refer to:
+ 
+ [insert reference to paper here]
+ 
+ We kindly ask that you include this reference in all publications 
+ associated to this pseudopotential.
+
+
+Input file for PP generation:
+
+# ATOM AND REFERENCE CONFIGURATION
+# atsym  z    nc    nv    iexc   psfile
+  S 16.00     3     2     3      fpmd
+#
+#   n    l    f        energy (Ha)
+    1    0    2.00
+    2    0    2.00
+    2    1    6.00
+    3    0    2.00
+    3    1    4.00
+#
+# PSEUDOPOTENTIAL AND OPTIMIZATION
+# lmax
+    1
+#
+#   l,   rc,     ep,   ncon, nbas, qcut
+    0   2.12945  -0.63520    5    8   6.75573
+    1   1.52480  -0.26138    5    8   8.63513
+#
+# LOCAL POTENTIAL
+# lloc, lpopt,  rc(5),   dvloc0
+    4    5   0.95758      0.00000
+#
+# VANDERBILT-KLEINMAN-BYLANDER PROJECTORs
+# l, nproj, debl
+    0    2   1.22534
+    1    2   1.65602
+#
+# MODEL CORE CHARGE
+# icmod, fcfact
+    0   0.00000
+#
+# LOG DERIVATIVE ANALYSIS
+# epsh1, epsh2, depsh
+   -5.00    3.00    0.02
+#
+# OUTPUT GRID
+# rlmax, drl
+    6.00    0.01
+#
+# TEST CONFIGURATIONS
+# ncnf
+    0
+# nvcnf
+#   n    l    f
+ </description>
+ <symbol>S</symbol>
+ <atomic_number>16</atomic_number>
+ <mass>32.06</mass>
+ <norm_conserving_semilocal_pseudopotential>
+ <valence_charge>6</valence_charge>
+ <mesh_spacing>0.01</mesh_spacing>
+ </norm_conserving_semilocal_pseudopotential>
+</species>
+ SLPP semilocal potential
+ rcps_ =   1.5
+[qbox] <cmd>species Mo Mo_ONCV_LDA-1.0.xml</cmd>
+  SpeciesCmd: defining species Mo as Mo_ONCV_LDA-1.0.xml
+
+Warning at file , line 0, char 0
+  Message: unable to open primary document entity '/home/ubuntu/MoS2/species.xsd'
+
+ species Mo:
+<species name="Mo">
+ <description>
+
+
+ This pseudopotential file has been produced using the code
+ ONCVPSP  (Optimized Norm-Conservinng Vanderbilt PSeudopotential)
+ scalar-relativistic version 2.1.1, 03/26/2014 by D. R. Hamann
+ The code is available through a link at URL www.mat-simresearch.com.
+ Documentation with the package provides a full discription of the
+ input data below.
+
+
+ While it is not required under the terms of the GNU GPL, it is
+ suggested that you cite D. R. Hamann, Phys. Rev. B 88, 085117 (2013)
+ in any publication using these pseudopotentials.
+
+
+ Copyright 2015 The Regents of the University of California
+ 
+ This work is licensed under the Creative Commons Attribution-ShareAlike 
+ 4.0 International License. To view a copy of this license, visit 
+ http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to 
+ Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+ 
+ This pseudopotential is part of the Schlipf-Gygi norm-conserving 
+ pseudopotential library. Its construction parameters were tuned to 
+ reproduce materials of a training set with very high accuracy and 
+ should be suitable as a general purpose pseudopotential to treat a 
+ variety of different compounds. For details of the construction and 
+ testing of the pseudopotential please refer to:
+ 
+ [insert reference to paper here]
+ 
+ We kindly ask that you include this reference in all publications 
+ associated to this pseudopotential.
+
+
+Input file for PP generation:
+
+# ATOM AND REFERENCE CONFIGURATION
+# atsym  z    nc    nv    iexc   psfile
+  Mo 42.00     6     4     3      fpmd
+#
+#   n    l    f        energy (Ha)
+    1    0    2.00
+    2    0    2.00
+    2    1    6.00
+    3    0    2.00
+    3    1    6.00
+    3    2   10.00
+    4    0    2.00
+    4    1    6.00
+    5    0    2.00
+    4    2    4.00
+#
+# PSEUDOPOTENTIAL AND OPTIMIZATION
+# lmax
+    2
+#
+#   l,   rc,     ep,   ncon, nbas, qcut
+    0   2.31752  -2.46646    5    8   6.14340
+    1   2.51934  -1.51214    5    8   5.89847
+    2   2.58017  -0.21312    5    8   5.73514
+#
+# LOCAL POTENTIAL
+# lloc, lpopt,  rc(5),   dvloc0
+    4    5   1.54485      0.00000
+#
+# VANDERBILT-KLEINMAN-BYLANDER PROJECTORs
+# l, nproj, debl
+    0    2   2.27972
+    1    2   1.55891
+    2    2   1.36726
+#
+# MODEL CORE CHARGE
+# icmod, fcfact
+    0   0.00000
+#
+# LOG DERIVATIVE ANALYSIS
+# epsh1, epsh2, depsh
+   -5.00    3.00    0.02
+#
+# OUTPUT GRID
+# rlmax, drl
+    6.00    0.01
+#
+# TEST CONFIGURATIONS
+# ncnf
+    0
+# nvcnf
+#   n    l    f
+ </description>
+ <symbol>Mo</symbol>
+ <atomic_number>42</atomic_number>
+ <mass>95.96</mass>
+ <norm_conserving_semilocal_pseudopotential>
+ <valence_charge>14</valence_charge>
+ <mesh_spacing>0.01</mesh_spacing>
+ </norm_conserving_semilocal_pseudopotential>
+</species>
+ SLPP semilocal potential
+ rcps_ =   1.5
+[qbox] [qbox] <cmd>set cell 6.0337 0  0 -3.0169 5.2254  0  0 0 26.4236</cmd>
+<unit_cell 
+    a="  6.03370000   0.00000000   0.00000000"
+    b=" -3.01690000   5.22540000   0.00000000"
+    c="  0.00000000   0.00000000  26.42360000" />
+[qbox] <cmd>atom Mo Mo 0 0 6.6059</cmd>
+[qbox] <cmd>atom S1 Sulfur -0.0000    3.4836    9.5656</cmd>
+[qbox] <cmd>atom S2 Sulfur -0.0000    3.4836    3.6462</cmd>
+[qbox] <cmd>#</cmd>
+[qbox] <cmd>#set cell   5.2032493 -3.0040974  0.0000000 5.2032493  3.0040974  0.0000000 0.0000000  0.0000000 43.7178659</cmd>
+[qbox] <cmd>#atom M1 Mo 3.2302464  0.1283354 22.4715422</cmd>
+[qbox] <cmd>#atom S1 Sulfur 6.6990968  0.1283049 19.5142971</cmd>
+[qbox] <cmd>#atom S2 Sulfur 6.6990969  0.1283048 25.4292958</cmd>
+[qbox] <cmd>#</cmd>
+[qbox] <cmd>kp22.i</cmd>
+[qbox][kp22.i] <cmd>kpoint delete 0 0 0</cmd>
+[qbox][kp22.i] <cmd>kpoint add -0.25 -0.25  0.00   0.50</cmd>
+[qbox][kp22.i] <cmd>kpoint add -0.25  0.25  0.00   0.50</cmd>
+[qbox][kp22.i]  End of command stream 
+[qbox] <cmd>set xc LDA</cmd>
+[qbox] <cmd>set ecut 65</cmd>
+[qbox] <cmd>set ecutprec 4</cmd>
+[qbox] <cmd>set wf_dyn PSD</cmd>
+[qbox] <cmd>set scf_tol 0.00000001</cmd>
+[qbox] <cmd>randomize_wf</cmd>
+[qbox] <cmd>run 0 200</cmd>
+  EnergyFunctional: np0v,np1v,np2v: 36 36 144
+  EnergyFunctional: vft->np012(): 186624
+<wavefunction ecut="32.50000000" nspin="1" nel="26" nempty="0">
+<cell a="6.033700 0.000000 0.000000"
+      b="-3.016900 5.225400 0.000000"
+      c="0.000000 0.000000 26.423600"/>
+ reciprocal lattice vectors
+ 1.041349 0.601226 -0.000000
+ 0.000000 1.202431 0.000000
+ 0.000000 -0.000000 0.237787
+<refcell a="0.000000 0.000000 0.000000"
+         b="0.000000 0.000000 0.000000"
+         c="0.000000 0.000000 0.000000"/>
+<grid nx="18" ny="18" nz="70"/>
+ kpoint: -0.250000 -0.250000 0.000000 weight: 0.500000
+<slater_determinant kpoint="-0.250000 -0.250000 0.000000" size="13">
+ sdcontext: 1x1
+ basis size: 7388
+ c dimensions: 7388x13   (7388x13 blocks)
+ <density_matrix form="diagonal" size="13">
+ </density_matrix>
+</slater_determinant>
+ kpoint: -0.250000 0.250000 0.000000 weight: 0.500000
+<slater_determinant kpoint="-0.250000 0.250000 0.000000" size="13">
+ sdcontext: 1x1
+ basis size: 7347
+ c dimensions: 7347x13   (7347x13 blocks)
+ <density_matrix form="diagonal" size="13">
+ </density_matrix>
+</slater_determinant>
+</wavefunction>
+<iteration count="1">
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  95.41768158 </eigenvalue_sum>
+  <etotal_int>     275.72123174 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -16.10079430 </eigenvalue_sum>
+  <etotal_int>      43.26262249 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -34.90399485 </eigenvalue_sum>
+  <etotal_int>     -29.56745252 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -20.33584390 </eigenvalue_sum>
+  <etotal_int>     -64.25270471 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -14.05159220 </eigenvalue_sum>
+  <etotal_int>     -75.34328011 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -12.85337850 </eigenvalue_sum>
+  <etotal_int>     -80.15359099 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -12.54452294 </eigenvalue_sum>
+  <etotal_int>     -82.64348878 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -12.29313352 </eigenvalue_sum>
+  <etotal_int>     -84.13418642 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -12.04740528 </eigenvalue_sum>
+  <etotal_int>     -85.10298334 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -11.80950691 </eigenvalue_sum>
+  <etotal_int>     -85.77038304 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -11.58490757 </eigenvalue_sum>
+  <etotal_int>     -86.25364025 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -11.37936729 </eigenvalue_sum>
+  <etotal_int>     -86.61946104 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -11.19680600 </eigenvalue_sum>
+  <etotal_int>     -86.90724926 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -11.03840289 </eigenvalue_sum>
+  <etotal_int>     -87.14105062 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.90318432 </eigenvalue_sum>
+  <etotal_int>     -87.33604270 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.78900146 </eigenvalue_sum>
+  <etotal_int>     -87.50213707 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.69329883 </eigenvalue_sum>
+  <etotal_int>     -87.64601989 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.61355589 </eigenvalue_sum>
+  <etotal_int>     -87.77233890 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.54748184 </eigenvalue_sum>
+  <etotal_int>     -87.88441515 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.49306877 </eigenvalue_sum>
+  <etotal_int>     -87.98468330 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.44857981 </eigenvalue_sum>
+  <etotal_int>     -88.07497247 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.41251566 </eigenvalue_sum>
+  <etotal_int>     -88.15669028 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.38357979 </eigenvalue_sum>
+  <etotal_int>     -88.23094632 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.36064937 </eigenvalue_sum>
+  <etotal_int>     -88.29863631 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.34275242 </eigenvalue_sum>
+  <etotal_int>     -88.36050005 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.32904963 </eigenvalue_sum>
+  <etotal_int>     -88.41716152 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.31881883 </eigenvalue_sum>
+  <etotal_int>     -88.46915660 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.31144087 </eigenvalue_sum>
+  <etotal_int>     -88.51695236 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.30638638 </eigenvalue_sum>
+  <etotal_int>     -88.56096045 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.30320329 </eigenvalue_sum>
+  <etotal_int>     -88.60154663 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.30150560 </eigenvalue_sum>
+  <etotal_int>     -88.63903766 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.30096348 </eigenvalue_sum>
+  <etotal_int>     -88.67372644 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.30129501 </eigenvalue_sum>
+  <etotal_int>     -88.70587610 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.30225936 </eigenvalue_sum>
+  <etotal_int>     -88.73572325 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.30365143 </eigenvalue_sum>
+  <etotal_int>     -88.76348075 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.30529756 </eigenvalue_sum>
+  <etotal_int>     -88.78934014 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.30705204 </eigenvalue_sum>
+  <etotal_int>     -88.81347376 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.30879420 </eigenvalue_sum>
+  <etotal_int>     -88.83603665 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.31042585 </eigenvalue_sum>
+  <etotal_int>     -88.85716824 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.31186893 </eigenvalue_sum>
+  <etotal_int>     -88.87699394 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.31306322 </eigenvalue_sum>
+  <etotal_int>     -88.89562643 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.31396423 </eigenvalue_sum>
+  <etotal_int>     -88.91316701 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.31454107 </eigenvalue_sum>
+  <etotal_int>     -88.92970663 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.31477451 </eigenvalue_sum>
+  <etotal_int>     -88.94532700 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.31465512 </eigenvalue_sum>
+  <etotal_int>     -88.96010139 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.31418157 </eigenvalue_sum>
+  <etotal_int>     -88.97409557 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.31335909 </eigenvalue_sum>
+  <etotal_int>     -88.98736848 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.31219816 </eigenvalue_sum>
+  <etotal_int>     -88.99997293 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.31071332 </eigenvalue_sum>
+  <etotal_int>     -89.01195624 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.30892217 </eigenvalue_sum>
+  <etotal_int>     -89.02336080 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.30684454 </eigenvalue_sum>
+  <etotal_int>     -89.03422455 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.30450177 </eigenvalue_sum>
+  <etotal_int>     -89.04458150 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.30191621 </eigenvalue_sum>
+  <etotal_int>     -89.05446213 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.29911067 </eigenvalue_sum>
+  <etotal_int>     -89.06389378 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.29610812 </eigenvalue_sum>
+  <etotal_int>     -89.07290104 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.29293134 </eigenvalue_sum>
+  <etotal_int>     -89.08150606 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.28960272 </eigenvalue_sum>
+  <etotal_int>     -89.08972882 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.28614405 </eigenvalue_sum>
+  <etotal_int>     -89.09758746 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.28257637 </eigenvalue_sum>
+  <etotal_int>     -89.10509848 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.27891984 </eigenvalue_sum>
+  <etotal_int>     -89.11227696 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.27519368 </eigenvalue_sum>
+  <etotal_int>     -89.11913677 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.27141607 </eigenvalue_sum>
+  <etotal_int>     -89.12569075 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.26760409 </eigenvalue_sum>
+  <etotal_int>     -89.13195084 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.26377372 </eigenvalue_sum>
+  <etotal_int>     -89.13792825 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.25993978 </eigenvalue_sum>
+  <etotal_int>     -89.14363354 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.25611590 </eigenvalue_sum>
+  <etotal_int>     -89.14907672 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.25231457 </eigenvalue_sum>
+  <etotal_int>     -89.15426738 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.24854713 </eigenvalue_sum>
+  <etotal_int>     -89.15921472 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.24482376 </eigenvalue_sum>
+  <etotal_int>     -89.16392762 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.24115356 </eigenvalue_sum>
+  <etotal_int>     -89.16841466 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.23754452 </eigenvalue_sum>
+  <etotal_int>     -89.17268424 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.23400362 </eigenvalue_sum>
+  <etotal_int>     -89.17674450 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.23053687 </eigenvalue_sum>
+  <etotal_int>     -89.18060343 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.22714931 </eigenvalue_sum>
+  <etotal_int>     -89.18426882 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.22384512 </eigenvalue_sum>
+  <etotal_int>     -89.18774832 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.22062769 </eigenvalue_sum>
+  <etotal_int>     -89.19104942 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.21749960 </eigenvalue_sum>
+  <etotal_int>     -89.19417946 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.21446278 </eigenvalue_sum>
+  <etotal_int>     -89.19714560 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.21151851 </eigenvalue_sum>
+  <etotal_int>     -89.19995488 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.20866748 </eigenvalue_sum>
+  <etotal_int>     -89.20261415 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.20590987 </eigenvalue_sum>
+  <etotal_int>     -89.20513011 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.20324543 </eigenvalue_sum>
+  <etotal_int>     -89.20750929 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.20067346 </eigenvalue_sum>
+  <etotal_int>     -89.20975802 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.19819293 </eigenvalue_sum>
+  <etotal_int>     -89.21188246 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.19580251 </eigenvalue_sum>
+  <etotal_int>     -89.21388861 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.19350059 </eigenvalue_sum>
+  <etotal_int>     -89.21578224 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.19128536 </eigenvalue_sum>
+  <etotal_int>     -89.21756895 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.18915480 </eigenvalue_sum>
+  <etotal_int>     -89.21925413 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.18710678 </eigenvalue_sum>
+  <etotal_int>     -89.22084299 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.18513901 </eigenvalue_sum>
+  <etotal_int>     -89.22234052 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.18324916 </eigenvalue_sum>
+  <etotal_int>     -89.22375153 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.18143481 </eigenvalue_sum>
+  <etotal_int>     -89.22508063 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.17969350 </eigenvalue_sum>
+  <etotal_int>     -89.22633222 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.17802275 </eigenvalue_sum>
+  <etotal_int>     -89.22751053 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.17642008 </eigenvalue_sum>
+  <etotal_int>     -89.22861959 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.17488303 </eigenvalue_sum>
+  <etotal_int>     -89.22966323 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.17340915 </eigenvalue_sum>
+  <etotal_int>     -89.23064513 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.17199602 </eigenvalue_sum>
+  <etotal_int>     -89.23156876 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.17064128 </eigenvalue_sum>
+  <etotal_int>     -89.23243744 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.16934261 </eigenvalue_sum>
+  <etotal_int>     -89.23325433 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.16809775 </eigenvalue_sum>
+  <etotal_int>     -89.23402240 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.16690449 </eigenvalue_sum>
+  <etotal_int>     -89.23474448 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.16576070 </eigenvalue_sum>
+  <etotal_int>     -89.23542327 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.16466430 </eigenvalue_sum>
+  <etotal_int>     -89.23606129 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.16361330 </eigenvalue_sum>
+  <etotal_int>     -89.23666095 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.16260576 </eigenvalue_sum>
+  <etotal_int>     -89.23722453 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.16163982 </eigenvalue_sum>
+  <etotal_int>     -89.23775415 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.16071369 </eigenvalue_sum>
+  <etotal_int>     -89.23825184 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.15982565 </eigenvalue_sum>
+  <etotal_int>     -89.23871953 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.15897404 </eigenvalue_sum>
+  <etotal_int>     -89.23915899 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.15815728 </eigenvalue_sum>
+  <etotal_int>     -89.23957194 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.15737384 </eigenvalue_sum>
+  <etotal_int>     -89.23995997 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.15662228 </eigenvalue_sum>
+  <etotal_int>     -89.24032458 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.15590120 </eigenvalue_sum>
+  <etotal_int>     -89.24066719 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.15520927 </eigenvalue_sum>
+  <etotal_int>     -89.24098914 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.15454521 </eigenvalue_sum>
+  <etotal_int>     -89.24129168 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.15390781 </eigenvalue_sum>
+  <etotal_int>     -89.24157598 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.15329590 </eigenvalue_sum>
+  <etotal_int>     -89.24184317 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.15270838 </eigenvalue_sum>
+  <etotal_int>     -89.24209427 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.15214419 </eigenvalue_sum>
+  <etotal_int>     -89.24233027 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.15160231 </eigenvalue_sum>
+  <etotal_int>     -89.24255210 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.15108179 </eigenvalue_sum>
+  <etotal_int>     -89.24276060 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.15058170 </eigenvalue_sum>
+  <etotal_int>     -89.24295661 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.15010116 </eigenvalue_sum>
+  <etotal_int>     -89.24314087 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14963934 </eigenvalue_sum>
+  <etotal_int>     -89.24331411 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14919543 </eigenvalue_sum>
+  <etotal_int>     -89.24347699 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14876868 </eigenvalue_sum>
+  <etotal_int>     -89.24363015 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14835836 </eigenvalue_sum>
+  <etotal_int>     -89.24377418 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14796377 </eigenvalue_sum>
+  <etotal_int>     -89.24390964 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14758426 </eigenvalue_sum>
+  <etotal_int>     -89.24403704 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14721919 </eigenvalue_sum>
+  <etotal_int>     -89.24415688 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14686796 </eigenvalue_sum>
+  <etotal_int>     -89.24426962 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14652999 </eigenvalue_sum>
+  <etotal_int>     -89.24437569 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14620474 </eigenvalue_sum>
+  <etotal_int>     -89.24447548 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14589168 </eigenvalue_sum>
+  <etotal_int>     -89.24456939 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14559031 </eigenvalue_sum>
+  <etotal_int>     -89.24465777 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14530016 </eigenvalue_sum>
+  <etotal_int>     -89.24474095 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14502077 </eigenvalue_sum>
+  <etotal_int>     -89.24481925 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14475170 </eigenvalue_sum>
+  <etotal_int>     -89.24489295 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14449254 </eigenvalue_sum>
+  <etotal_int>     -89.24496235 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14424289 </eigenvalue_sum>
+  <etotal_int>     -89.24502769 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14400237 </eigenvalue_sum>
+  <etotal_int>     -89.24508923 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14377062 </eigenvalue_sum>
+  <etotal_int>     -89.24514718 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14354729 </eigenvalue_sum>
+  <etotal_int>     -89.24520176 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14333204 </eigenvalue_sum>
+  <etotal_int>     -89.24525318 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14312456 </eigenvalue_sum>
+  <etotal_int>     -89.24530162 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14292455 </eigenvalue_sum>
+  <etotal_int>     -89.24534727 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14273171 </eigenvalue_sum>
+  <etotal_int>     -89.24539028 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14254577 </eigenvalue_sum>
+  <etotal_int>     -89.24543082 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14236646 </eigenvalue_sum>
+  <etotal_int>     -89.24546902 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14219352 </eigenvalue_sum>
+  <etotal_int>     -89.24550504 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14202671 </eigenvalue_sum>
+  <etotal_int>     -89.24553899 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14186580 </eigenvalue_sum>
+  <etotal_int>     -89.24557101 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14171055 </eigenvalue_sum>
+  <etotal_int>     -89.24560120 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14156077 </eigenvalue_sum>
+  <etotal_int>     -89.24562967 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14141623 </eigenvalue_sum>
+  <etotal_int>     -89.24565652 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14127675 </eigenvalue_sum>
+  <etotal_int>     -89.24568185 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14114213 </eigenvalue_sum>
+  <etotal_int>     -89.24570575 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14101219 </eigenvalue_sum>
+  <etotal_int>     -89.24572830 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14088675 </eigenvalue_sum>
+  <etotal_int>     -89.24574958 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14076566 </eigenvalue_sum>
+  <etotal_int>     -89.24576966 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14064875 </eigenvalue_sum>
+  <etotal_int>     -89.24578861 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14053586 </eigenvalue_sum>
+  <etotal_int>     -89.24580651 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14042685 </eigenvalue_sum>
+  <etotal_int>     -89.24582340 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14032157 </eigenvalue_sum>
+  <etotal_int>     -89.24583935 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14021989 </eigenvalue_sum>
+  <etotal_int>     -89.24585441 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14012168 </eigenvalue_sum>
+  <etotal_int>     -89.24586863 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.14002681 </eigenvalue_sum>
+  <etotal_int>     -89.24588206 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13993517 </eigenvalue_sum>
+  <etotal_int>     -89.24589475 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13984663 </eigenvalue_sum>
+  <etotal_int>     -89.24590674 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13976108 </eigenvalue_sum>
+  <etotal_int>     -89.24591807 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13967842 </eigenvalue_sum>
+  <etotal_int>     -89.24592877 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13959854 </eigenvalue_sum>
+  <etotal_int>     -89.24593888 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13952134 </eigenvalue_sum>
+  <etotal_int>     -89.24594844 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13944674 </eigenvalue_sum>
+  <etotal_int>     -89.24595748 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13937463 </eigenvalue_sum>
+  <etotal_int>     -89.24596602 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13930492 </eigenvalue_sum>
+  <etotal_int>     -89.24597410 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13923755 </eigenvalue_sum>
+  <etotal_int>     -89.24598174 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13917241 </eigenvalue_sum>
+  <etotal_int>     -89.24598896 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13910943 </eigenvalue_sum>
+  <etotal_int>     -89.24599579 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13904855 </eigenvalue_sum>
+  <etotal_int>     -89.24600226 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13898967 </eigenvalue_sum>
+  <etotal_int>     -89.24600837 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13893275 </eigenvalue_sum>
+  <etotal_int>     -89.24601415 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13887769 </eigenvalue_sum>
+  <etotal_int>     -89.24601962 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13882445 </eigenvalue_sum>
+  <etotal_int>     -89.24602480 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13877296 </eigenvalue_sum>
+  <etotal_int>     -89.24602970 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13872316 </eigenvalue_sum>
+  <etotal_int>     -89.24603434 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13867498 </eigenvalue_sum>
+  <etotal_int>     -89.24603873 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13862839 </eigenvalue_sum>
+  <etotal_int>     -89.24604289 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13858331 </eigenvalue_sum>
+  <etotal_int>     -89.24604683 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13853970 </eigenvalue_sum>
+  <etotal_int>     -89.24605055 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13849750 </eigenvalue_sum>
+  <etotal_int>     -89.24605408 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13845668 </eigenvalue_sum>
+  <etotal_int>     -89.24605743 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13841718 </eigenvalue_sum>
+  <etotal_int>     -89.24606059 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13837896 </eigenvalue_sum>
+  <etotal_int>     -89.24606359 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13834198 </eigenvalue_sum>
+  <etotal_int>     -89.24606643 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13830618 </eigenvalue_sum>
+  <etotal_int>     -89.24606913 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13827154 </eigenvalue_sum>
+  <etotal_int>     -89.24607168 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13823802 </eigenvalue_sum>
+  <etotal_int>     -89.24607410 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <eigenvalue_sum>  -10.13820557 </eigenvalue_sum>
+  <etotal_int>     -89.24607639 </etotal_int>
+  total_electronic_charge: 26.00000000
+  <ekin>        28.86016628 </ekin>
+  <econf>        0.00000000 </econf>
+  <eps>        -44.87989602 </eps>
+  <enl>          9.05603182 </enl>
+  <ecoul>      -70.07901195 </ecoul>
+  <exc>        -12.20336869 </exc>
+  <esr>          0.26268220 </esr>
+  <eself>       71.27768743 </eself>
+  <ets>          0.00000000 </ets>
+  <eexf>         0.00000000 </eexf>
+  <etotal>     -89.24607856 </etotal>
+  <epv>          0.00000000 </epv>
+  <eefield>      0.00000000 </eefield>
+  <enthalpy>   -89.24607856 </enthalpy>
+<atomset>
+<unit_cell 
+    a="  6.03370000   0.00000000   0.00000000"
+    b=" -3.01690000   5.22540000   0.00000000"
+    c="  0.00000000   0.00000000  26.42360000" />
+  <atom name="S1" species="Sulfur">
+    <position> -0.00000000 3.48360000 9.56560000 </position>
+    <velocity> 0.00000000 0.00000000 0.00000000 </velocity>
+    <force> -0.00788427 0.00454113 -0.01496640 </force>
+  </atom>
+  <atom name="S2" species="Sulfur">
+    <position> -0.00000000 3.48360000 3.64620000 </position>
+    <velocity> 0.00000000 0.00000000 0.00000000 </velocity>
+    <force> -0.00781517 0.00508990 0.01554526 </force>
+  </atom>
+  <atom name="Mo" species="Mo">
+    <position> 0.00000000 0.00000000 6.60590000 </position>
+    <velocity> 0.00000000 0.00000000 0.00000000 </velocity>
+    <force> 0.01554887 -0.00930932 -0.00074552 </force>
+  </atom>
+</atomset>
+<unit_cell_a_norm> 6.033700 </unit_cell_a_norm>
+<unit_cell_b_norm> 6.033779 </unit_cell_b_norm>
+<unit_cell_c_norm> 26.423600 </unit_cell_c_norm>
+<unit_cell_alpha>  90.000 </unit_cell_alpha>
+<unit_cell_beta>   90.000 </unit_cell_beta>
+<unit_cell_gamma>  120.000 </unit_cell_gamma>
+<unit_cell_volume> 833.096 </unit_cell_volume>
+<timing name="iteration"       min="66.437" max="66.437"/>
+</iteration>
+<timing name="charge"          min="19.696" max="19.696"/>
+<timing name="energy"          min="40.792" max="40.792"/>
+<timing name="gram"            min="1.131" max="1.131"/>
+<timing name="psd_residual"    min="1.457" max="1.457"/>
+<timing name="psd_update_wf"   min="0.198" max="0.198"/>
+<timing name="update_vhxc"     min="2.388" max="2.388"/>
+<timing name="wf_update"       min="3.380" max="3.380"/>
+<timing name="ekin"            min="0.717" max="0.717"/>
+<timing name="exc"             min="1.397" max="1.397"/>
+<timing name="hpsi"            min="18.070" max="18.070"/>
+<timing name="nonlocal"        min="21.924" max="21.924"/>
+<timing name="charge_compute"  min="18.806" max="18.806"/>
+<timing name="charge_integral" min="0.085" max="0.085"/>
+<timing name="charge_rowsum"   min="0.071" max="0.071"/>
+<timing name="charge_vft"      min="0.726" max="0.726"/>
+[qbox] [qbox] [qbox]  End of command stream 
+<real_time> 66.945 </real_time>
+<end_time> 2019-12-18T02:16:29Z </end_time>
+</fpmd:simulation>

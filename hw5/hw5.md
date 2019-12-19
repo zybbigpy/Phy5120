@@ -62,7 +62,7 @@ After geometry optimization, the distance between the atoms and angle is as foll
  angle H1-O-H2: 104.732 (deg)
 ```
 
-According to the result, we find that the water molecule has $C_2$ rotation symmetry and two kinds of mirror symmetry.
+According to the result, we find that the water molecule has $C_{2v}$ symmetry.
 
 ## 3
 
@@ -75,7 +75,7 @@ The result must converge well due to it is close to the real geometry of the wat
 ./dynmat force.mat 0.05 1 16 2 1
 ```
 
-The matrix $D$ is not symmetric. Then we use the this method to get a symmetrized matrix $D_s$:​
+The matrix $D$ is not symmetric. Then we use the this method to get a symmetrized matrix $D_s$:
 
 $$
 D_s = \frac{1}{2}(D+D^{T})
@@ -91,7 +91,7 @@ The three largest vibration frequencies are:
 
 ## 4
 
-The first picture shows that HOMO is lack of symmetry and the second picture shows that
+The first picture shows that HOMO has symmetry and the second picture shows that
 
 LUMO has mirror symmetry. They are consistent with the reference [2].
 
@@ -100,6 +100,6 @@ LUMO has mirror symmetry. They are consistent with the reference [2].
 
 ## Reference
 
-[1] https://www.researchgate.net/figure/The-three-vibrational-modes-of-the-water-molecule-and-their-fundamental-frequencies-in_fig3_5803530
+[1] [水的振动模式](https://www.researchgate.net/figure/The-three-vibrational-modes-of-the-water-molecule-and-their-fundamental-frequencies-in_fig3_5803530)
 
-[2] http://www1.lsbu.ac.uk/water/h2o_orbitals.html
+[2] [水的分子轨道](http://www1.lsbu.ac.uk/water/h2o_orbitals.html)
